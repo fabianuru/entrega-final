@@ -1,4 +1,49 @@
-/*TABLET VERSION*/
-@media only screen and (min-width: 768px) {
-    
+// TABLET
+
+@media only screen and (min-width: 768px) {   
+.logo {
+    font-size: 3em;
+}
+.header-nav {
+    &-list {
+        @include d-flex (row,space-around,center,wrap,1rem);
+    }
+    &-link {
+        font-size: 1em;
+        font-weight: 300;
+    }
+}
+#footer {
+    @include d-flex (column,flex-start,center,nowrap,2rem);
+}
+.footer-nav {
+    @include d-flex (row,space-around,flex-start,nowrap,1rem);
+    text-align: center;
+}
+.list-title{
+    font-size: 1.2em;
+}
+.list-subtitle{
+    font-size: 0.8em;
+}
+.footer-link {
+    font-size: 0.6em;
+}
+.copyrights {
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+#purchase-banner {
+    height: 25vh;
+}
+#detox-banner{
+    height: 25vh;
+}
+
+#contact-banner {
+    height: 25vh;
+}
+
 }

@@ -51,7 +51,6 @@
 // SECCCION BANNER
 #banner{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/37.jpg);
-    // background-attachment: fixed;
     @extend .bg-center;
     @include d-flex (column,flex-start,center,nowrap,0.5rem);
     text-align:center;

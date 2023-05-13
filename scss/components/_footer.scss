@@ -1,5 +1,5 @@
 footer {
-    @include d-flex (column,space-between,center,wrap,0); 
+    @include d-flex (column,space-between,center,nowrap,0); 
 
 }
 .footer-nav {
@@ -7,15 +7,15 @@ footer {
 }
 .list-title{
     font-weight: 900;
-    font-size: 2.2em;
+    font-size: 1.8em;
 }
 .list-subtitle{
     font-weight: 100; 
     text-transform: capitalize; 
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .footer-link {
-    font-size: 1.1em;
+    font-size: 0.9em;
 }
 .copyrights {
     font-size: 0.8em;
