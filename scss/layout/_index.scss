@@ -1,0 +1,61 @@
+header {
+    padding: 5% 10%;
+}
+
+// SECCION DE BIENVENIDA
+#welcome {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/21.jpg);
+    background-attachment: fixed;
+    @extend .bg-center;
+    @include d-flex (column,space-between,center,nowrap,0);
+}
+.welcome-container {
+    @include d-flex (column,space-around,center,nowrap,0);
+}
+
+// SECCION PRODUCTOS
+#products {
+    @include d-flex (column,flex-start,center,nowrap,2rem)
+}
+.products-container{
+    width: 100%;
+    height:100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.product-box {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    @include d-flex (column,flex-end,center,nowrap,0.5rem);
+    text-align: center;
+}
+.product-1 {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/21.jpg);
+    @extend .bg-center;
+}
+.product-2 {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/24.jpg);
+    @extend .bg-center;
+}
+.product-3 {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/7.jpg);
+    @extend .bg-center;
+}
+.product-4 {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/28.jpg);
+    @extend .bg-center;
+}
+// SECCCION BANNER
+#banner{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/37.jpg);
+    background-attachment: fixed;
+    @extend .bg-center;
+    @include d-flex (column,space-between,center,nowrap,0.5rem);
+    text-align:center;
+    
+}
+
+
