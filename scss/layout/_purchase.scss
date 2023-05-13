@@ -1,0 +1,27 @@
+
+
+
+.step-one{
+    padding: 5%;
+    @include d-flex (column,space-between,center,nowrap,0.5rem);
+    .inputs-box{
+    @include d-flex (column,space-between,flex-start,nowrap,0.5rem) ; 
+    }
+}
+.step-two{
+    padding: 5%;
+    @include d-flex (column,space-between,flex-start,nowrap,0.5rem);
+}
+.step-three{
+    padding: 5%;
+    @include d-flex (column,space-between,flex-start,nowrap,0.5rem);
+}
+.step-four{
+    padding: 5%;
+    @include d-flex (column,space-between,flex-start,nowrap,0.5rem);
+}
+
+.value-input {
+    @include d-flex (row,center,center,wrap,1rem)
+}
+

@@ -3,6 +3,27 @@
     height: 100vh;
     padding: 5% 10%;
 }
+.section-auto {
+    width: 100%;
+    height: auto;
+    padding: 5% 10%;
+}
+
+.double-section {
+    width: 100%;
+    height: 200vh;
+    padding: 5% 10%;
+}
+.triple-section {
+    width: 100%;
+    height: 300vh;
+    padding: 5% 10%;
+}
+.four-section {
+    width: 100%;
+    height: 400vh;
+    padding: 5% 10%;
+}
 
 
 @mixin d-flex ($direction,$justify,$align, $wrap,$gap) {
@@ -19,7 +40,6 @@
     grid-template-columns: repeat($columns,1fr);
     grid-template-rows: repeat($rows,1fr);
     gap: $gap;
-
 }
 
 

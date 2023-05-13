@@ -18,3 +18,14 @@
             line-height: 2;
         }
 }
+
+.button-input {
+    margin: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background-color: $bg-dark;
+    font-size: 0.9em;
+        a {
+            font-weight: 600;
+            line-height: 1.5;
+        }
+}

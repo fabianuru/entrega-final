@@ -1,0 +1,17 @@
+#contact{}
+
+#location{
+    padding: 5%;
+    @include d-flex(column,space-around,center,nowrap,0.5rem);
+    iframe {
+        padding: 5%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+#contact-info {
+    padding: 5%;
+    @include d-flex(column,space-around,center,nowrap,0.5rem);
+}
+

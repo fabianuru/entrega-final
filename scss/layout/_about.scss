@@ -1,0 +1,12 @@
+#about {
+    
+}
+
+.info-container {
+    padding: 10%;
+    @include d-flex (column,space-between,center,nowrap,1rem);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/21.jpg);
+    background-attachment: fixed;
+    @extend .bg-center;;
+}
+

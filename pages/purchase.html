@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Hacé tu pedido ahora</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <a class="logo" href="../index.html">JUICE<span>LAB</span></a>
+            <ul class="nav-list">
+                <li>
+                    <a href="../index.html" class="nav-link">INICIO</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-link">SOBRE NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="purchase.html" class="nav-link">CÓMO COMPRAR</a>
+                </li>
+                <li>
+                    <a href="detox.html" class="nav-link">PLAN DETOX</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="purchase section-auto">
+                <h1 class="hero-title">¿ CÓMO COMPRAR ?</h1>
+                <h2 class="section-title">
+                    SIGUE ESTOS SENCILLOS PASOS
+                </h2>
+                <form action="" class="purchase-form">
+                    <div class="step-one">
+                        <h4 class="box-title">PASO 1: ELEGÍ PLAN QUE MÁS SE ADAPTE A VOS</h4>
+                        <div class="inputs-box">
+                            <div class="value-input">
+                            <input  type="radio" id="PDRGREEN" name="select_pack" value="PLAN GREEN" required>
+                            <label for="PDRGREEN">PLAN DR GREEN</label>
+                            </div>
+                            <div class="value-input">
+                            <input  type="radio" id="P3DIAS" name="select_pack" value="PLAN 3 DIAS "  required>
+                            <label for="P3DIAS">PLAN 3 DIAS</label>
+                            </div>
+                            <div class="value-input">
+                            <input  type="radio" id="PPERSONALIZADO" name="select_pack" value="PERSONALIZA TU DETOX"  required>
+                            <label for="PPERSONALIZADO">PERSONALIZA TU DETOX</label>
+                            </div>
+                            <div class="value-input">
+                            <input  type="radio" id="PX10" name="select_pack" value="PACK 10 JUGOS" required >
+                            <label for="PX10">PACK 10 JUGOS</label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="step-two">
+                        <h4 class="box-title">PASO 2: ELEGÍ FECHA DE ENVÍO</h4>
+                        <label for="delivery">Fecha de envío</label>
+                        <input class="button-input" type="date" id="deliverydate" name="deliverydate"  required>
+                    </div>
+
+                    <div class="step-three">
+                        <h4 class="box-title">PASO 3: REALIZAR PAGO</h4>
+                        <p> EL PAGO SE REALIZA POR ADELANTADO MEDIANTE TRANSFERENCIA BANCARIA
+                            CUENTA 21000778903 BANCO ITAU</p>
+                    </div>
+
+                    <div class="step-four">
+                        <h4 class="box-title">PASO 4: LLENA CON TUS DATOS PARA EL ENVÍO</h4>
+                        <label for="name">Nombre:</label>
+                        <input class="button-input" type="text" id="name" name="name" placeholder="Ingrese su nombre"  required>
+                        <label for="adress">Dirección de envío:</label>
+                        <input class="button-input" type="text" id="adress" name="adress" placeholder="Ingrese su dirección" required>
+                        <label for="phonenumber">Teléfono de contacto:</label>
+                        <input class="button-input" type="text" id="phone" name="phone" placeholder="Ingrese su número de celular" required>
+                        <label for="phonenumber">Email:</label>
+                        <input class="button-input" type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                        <input class="button-input" type="submit" value="CONFIRMAR PEDIDO" onclick="alert('Gracias por su compra, a la brevedad un integrante de nuestro equipo se comunicará con usted para confirmar su pedido')">
+                        <input class="button-input" type="reset">
+                    </div> 
+                </form>
+        </section>
+    </main>
+
+    <footer class="section" #footer>
+        <a class="logo" href="../index.html">JUICELAB</a>
+        <nav class="footer-nav">
+            <ul class="site-list">
+                <h4 class="list-title">NUESTRO SITIO</h4>
+                <li>
+                    <a href="../index.html" class="footer-link">INICIO</a>
+                </li>
+                <li>
+                    <a href="about.html" class="footer-link">SOBRE NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="purchase.html" class="footer-link">CÓMO COMPRAR</a>
+                </li>
+                <li>
+                    <a href="detox.html" class="footer-link">PLAN DETOX</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">CONTACTO</a>
+                </li>
+            </ul>
+            <ul class="socials-list">
+                <h4 class="list-title">NUESTRA COMUNIDAD</h4>
+                <h5 class="list-subtitle">Seguínos en nuestras redes sociales</h5>
+                <li>
+                    <a href="https://www.instagram.com/juicelab.uy" class="footer-link">instagram</a>
+                </li>
+            </ul>
+            <ul class="info-list">
+                <h4 class="list-title">DE INTERÉS</h4>
+                <li>
+                    <a href="purchase.html" class="footer-link">Cómo comprar</a>
+                </li>
+                <li>
+                    <a href="detox.html"class="footer-link">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+        </nav>
+        <p class="copyrights">© Copyright 2023 | <a class="logo-sm" href="../index.html">JUICE<span>LAB</span></a> | Fabián Hirigoyen </p>
+    </footer>     
+</body>
+</html>

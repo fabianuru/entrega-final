@@ -1,6 +1,10 @@
+footer {
+    @include d-flex (column,space-between,center,wrap,1rem); 
+
+}
 
 .footer-nav {
-    @include d-flex (column,space-between,flex-start,wrap,0.5rem)
+    @include d-flex (column,space-between,flex-start,wrap,1rem);
 }
 
 .list-title{
@@ -18,7 +22,7 @@
 
 .copyrights {
     font-size: 0.8em;
-    text-align: right;
+    text-align: center;
     font-weight: 100;
     text-transform: capitalize;
 }

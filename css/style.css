@@ -8,7 +8,6 @@
   text-decoration: none;
   list-style-type: none;
   color: #FFFFFF;
-  border: 1px solid red;
 }
 
 body {
@@ -21,7 +20,31 @@ body {
   padding: 5% 10%;
 }
 
-.bg-center, #banner, .product-4, .product-3, .product-2, .product-1, #welcome {
+.section-auto {
+  width: 100%;
+  height: auto;
+  padding: 5% 10%;
+}
+
+.double-section {
+  width: 100%;
+  height: 200vh;
+  padding: 5% 10%;
+}
+
+.triple-section {
+  width: 100%;
+  height: 300vh;
+  padding: 5% 10%;
+}
+
+.four-section {
+  width: 100%;
+  height: 400vh;
+  padding: 5% 10%;
+}
+
+.bg-center, .info-container, #banner, .product-4, .product-3, .product-2, .product-1, #welcome {
   background-position: center;
   background-size: cover;
 }
@@ -70,6 +93,7 @@ body {
   text-align: center;
   line-height: 1.5;
   font-weight: 900;
+  margin-bottom: 1rem;
 }
 
 .section-title {
@@ -80,10 +104,10 @@ body {
 }
 
 .section-subtitle {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1;
   text-align: center;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .section-text {
@@ -130,13 +154,33 @@ body {
   line-height: 2;
 }
 
+.button-input {
+  margin: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #1f1f1f;
+  font-size: 0.9em;
+}
+.button-input a {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .footer-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .list-title {
@@ -154,7 +198,7 @@ body {
 
 .copyrights {
   font-size: 0.8em;
-  text-align: right;
+  text-align: center;
   font-weight: 100;
   text-transform: capitalize;
 }
@@ -240,6 +284,128 @@ header {
   flex-wrap: nowrap;
   gap: 0.5rem;
   text-align: center;
+}
+
+.info-container {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/21.jpg);
+  background-attachment: fixed;
+}
+
+.step-one {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+.step-one .inputs-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.step-two {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.step-three {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.step-four {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.value-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#detox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.detox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding: 5%;
+}
+.detox-container .img-box {
+  width: 15rem;
+  height: 15rem;
+}
+.detox-container .img-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#location {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+#location iframe {
+  padding: 5%;
+  width: 100%;
+  height: auto;
+}
+
+#contact-info {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
