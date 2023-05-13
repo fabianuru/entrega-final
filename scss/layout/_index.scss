@@ -5,7 +5,7 @@ header {
 // SECCION DE BIENVENIDA
 #welcome {
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/21.jpg);
-    background-attachment: fixed;
+    // background-attachment: fixed;
     @extend .bg-center;
     @include d-flex (column,space-between,center,nowrap,0);
 }
@@ -51,7 +51,7 @@ header {
 // SECCCION BANNER
 #banner{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/37.jpg);
-    background-attachment: fixed;
+    // background-attachment: fixed;
     @extend .bg-center;
     @include d-flex (column,space-between,center,nowrap,0.5rem);
     text-align:center;
