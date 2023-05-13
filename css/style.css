@@ -38,43 +38,36 @@ body {
   padding: 5% 10%;
 }
 
-.four-section {
-  width: 100%;
-  height: 400vh;
-  padding: 5% 10%;
-}
-
-.bg-center, .info-container, #banner, .product-4, .product-3, .product-2, .product-1, #welcome {
+.bg-center, #contact-banner, #detox-banner, #purchase-banner, #banner, .product-4, .product-3, .product-2, .product-1, #welcome {
   background-position: center;
   background-size: cover;
 }
 
-.nav {
-  width: 100%;
+.header-nav {
   padding: 1%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.nav-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1%;
+  gap: 0.5rem;
 }
-.nav-link {
-  font-size: 1.5em;
+.header-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.header-nav-link {
+  font-size: 1em;
+  font-weight: 300;
 }
 
 .logo {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 600;
 }
 .logo span {
@@ -91,30 +84,31 @@ body {
 .hero-title {
   font-size: 2em;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
 .section-title {
   font-size: 1.6em;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .section-subtitle {
   font-size: 1.2em;
   line-height: 1;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .section-text {
-  font-size: 1em;
+  font-size: 1.1em;
   text-align: center;
-  font-weight: 100;
-  padding: 10%;
+  font-weight: 200;
+  text-transform: capitalize;
+  line-height: 2;
 }
 
 .box-title {
@@ -171,7 +165,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0;
 }
 
 .footer-nav {
@@ -180,20 +174,22 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .list-title {
   font-weight: 900;
-  font-size: 0.9em;
+  font-size: 2.2em;
 }
 
 .list-subtitle {
-  font-weight: 300;
+  font-weight: 100;
+  text-transform: capitalize;
+  font-size: 1.5em;
 }
 
 .footer-link {
-  font-size: 0.8em;
+  font-size: 1.1em;
 }
 
 .copyrights {
@@ -203,19 +199,16 @@ footer {
   text-transform: capitalize;
 }
 
-header {
-  padding: 5% 10%;
-}
-
+/*TABLET VERSION*/
 #welcome {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/21.jpg);
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 0;
+  gap: 0.5rem;
+  padding: 5% 10%;
 }
 
 .welcome-container {
@@ -224,7 +217,7 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 0;
+  gap: 0.5rem;
 }
 
 #products {
@@ -276,26 +269,45 @@ header {
 
 #banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/37.jpg);
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
   gap: 0.5rem;
   text-align: center;
 }
 
-.info-container {
-  padding: 10%;
+#about {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   gap: 1rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/21.jpg);
-  background-attachment: fixed;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.galery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.galery-container img {
+  width: 100%;
+  height: 1000%;
+  object-fit: cover;
 }
 
 .step-one {
@@ -355,6 +367,16 @@ header {
   gap: 1rem;
 }
 
+#delivery {
+  background-color: #B0DAFF;
+}
+
+#purchase-banner {
+  width: 100%;
+  height: 15vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/21.jpg);
+}
+
 #detox {
   display: flex;
   flex-direction: column;
@@ -381,6 +403,13 @@ header {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+}
+
+#detox-banner {
+  width: 100%;
+  height: 20vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/28.jpg);
 }
 
 #location {
@@ -393,9 +422,9 @@ header {
   gap: 0.5rem;
 }
 #location iframe {
-  padding: 5%;
   width: 100%;
   height: auto;
+  margin: 1rem;
 }
 
 #contact-info {
@@ -406,6 +435,12 @@ header {
   align-items: center;
   flex-wrap: nowrap;
   gap: 0.5rem;
+}
+
+#contact-banner {
+  width: 100%;
+  height: 20vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/25.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,16 @@
-header {
-    padding: 5% 10%;
-}
 
 // SECCION DE BIENVENIDA
+
+
 #welcome {
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/21.jpg);
     // background-attachment: fixed;
     @extend .bg-center;
-    @include d-flex (column,space-between,center,nowrap,0);
+    @include d-flex (column,flex-start,center,nowrap,0.5rem);
+    padding: 5% 10%
 }
 .welcome-container {
-    @include d-flex (column,space-around,center,nowrap,0);
+    @include d-flex (column,space-around,center,nowrap,0.5rem);
 }
 
 // SECCION PRODUCTOS
@@ -53,7 +53,7 @@ header {
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/37.jpg);
     // background-attachment: fixed;
     @extend .bg-center;
-    @include d-flex (column,space-between,center,nowrap,0.5rem);
+    @include d-flex (column,flex-start,center,nowrap,0.5rem);
     text-align:center;
     
 }

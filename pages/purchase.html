@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Hacé tu pedido ahora</title>
+    <!-- LINK A GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+    
 </head>
 <body>
 
-    <header>
-        <nav class="nav">
+    <header class="section-auto">
+        <nav class="header-nav">
             <a class="logo" href="../index.html">JUICE<span>LAB</span></a>
             <ul class="nav-list">
                 <li>
@@ -33,12 +38,17 @@
     </header>
 
     <main>
+        <section class="section-auto" id="purchase-banner">
+            <h2 class="section-title">1,5KG = 500ML</h2>
+            <h3 class="section-subtitle">Jugo Prensado en frío</h3>
+            <p class="section-text">Sin Azúcar - sin agua -  sin conservantes</p>
+        </section>
         <section class="purchase section-auto">
                 <h1 class="hero-title">¿ CÓMO COMPRAR ?</h1>
-                <h2 class="section-title">
-                    SIGUE ESTOS SENCILLOS PASOS
-                </h2>
                 <form action="" class="purchase-form">
+                    <h2 class="section-title">
+                        SIGUE ESTOS SENCILLOS PASOS
+                    </h2>
                     <div class="step-one">
                         <h4 class="box-title">PASO 1: ELEGÍ PLAN QUE MÁS SE ADAPTE A VOS</h4>
                         <div class="inputs-box">
@@ -79,13 +89,19 @@
                         <label for="adress">Dirección de envío:</label>
                         <input class="button-input" type="text" id="adress" name="adress" placeholder="Ingrese su dirección" required>
                         <label for="phonenumber">Teléfono de contacto:</label>
-                        <input class="button-input" type="text" id="phone" name="phone" placeholder="Ingrese su número de celular" required>
+                        <input class="button-input" type="number" id="phone" name="phone" placeholder="Ingrese su número de celular" required>
                         <label for="phonenumber">Email:</label>
                         <input class="button-input" type="email" id="email" name="email" placeholder="Ingrese su email" required>
-                        <input class="button-input" type="submit" value="CONFIRMAR PEDIDO" onclick="alert('Gracias por su compra, a la brevedad un integrante de nuestro equipo se comunicará con usted para confirmar su pedido')">
+                        <input class="button-input" type="submit" value="CONFIRMAR PEDIDO" >
                         <input class="button-input" type="reset">
                     </div> 
                 </form>
+        </section>
+        <section class="section-auto" id="delivery">
+            <h2 class="section-title">ENVÍOS MARTES Y JUEVES</h2>
+            <h3 class="section-subtitle">Montevideo y Ciudad de la Costa</h3>
+            <p class="section-text">Costo de envío $150 - $300 </p>
+            <h3 class="section-subtitle">LOS PEDIDOS SE REALIZAN CON 24 HS DE ANTICIPACIÓN AL DÍA DE LA ENTREGA</h3>
         </section>
     </main>
 
