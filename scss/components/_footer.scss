@@ -22,5 +22,12 @@ footer {
     text-align: center;
     font-weight: 100;
     text-transform: capitalize;
+    transition: 1.5s;
+    &:hover {
+        background-image:linear-gradient(to right, $bg-warning,$bg-purple,$bg-green);           
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
 }
-
+}

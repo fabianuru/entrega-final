@@ -3,28 +3,41 @@
     padding: 0.5rem 1rem;
     background-color: $bg-dark;
     font-size: 1.2em;
+    transition: 1.5s;
         a {
             font-weight: 600;
             line-height: 2;
         }
-}
+    &:hover {
+            border: 0.3rem solid $bg-light;
+        }    
+        }
+
 .box-button {
     margin: 0.5rem;
     padding: 0.4rem 0.8rem;
     background-color: $bg-dark;
     font-size: 1em;
+    transition:1.5s;
         a {
             font-weight: 600;
             line-height: 2;
         }
+        &:hover {
+            border: 0.3rem solid $bg-light;
+        }    
 }
 .button-input {
     margin: 0.5rem;
     padding: 0.4rem 0.8rem;
     background-color: $bg-dark;
     font-size: 0.9em;
+    transition: 1.5s;
         a {
             font-weight: 600;
             line-height: 1.5;
+        }
+        &:hover {
+            border: 0.3rem solid $bg-light;
         }
 }

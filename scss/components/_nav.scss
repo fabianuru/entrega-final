@@ -8,6 +8,17 @@
     &-link {
         font-size: 1em;
         font-weight: 300;
+        transition:1.5s;
+        background-image: linear-gradient(#fff,#D8D8D8);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2%;
+        &:hover{
+            background-image: linear-gradient(#fff,#D8D8D8);
+            background-size: 100% 5px;
+
+        }
+        
     }
 }
 
