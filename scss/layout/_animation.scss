@@ -1,0 +1,20 @@
+@keyframes colorchange {
+    0% {
+        background-color:$bg-warning;
+    }
+    
+    10% {
+        background-color: $bg-purple;
+    }
+    25% {
+        background-color:$bg-green;
+    }
+    50% {
+        background-color:$bg-orange;
+    }
+    75% { background-color:$bg-sucess ;
+    }
+    100% {
+        background-color: $bg-cream;
+    }
+}

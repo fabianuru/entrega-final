@@ -1,6 +1,7 @@
+
 .step-one{
     padding: 5%;
-    @include d-flex (column,space-between,center,nowrap,0.5rem);
+    @include d-flex (column,space-between,flex-start,nowrap,0.5rem);
     .inputs-box{
     @include d-flex (column,space-between,flex-start,nowrap,0.5rem) ; 
     }
@@ -28,8 +29,9 @@
 
 #purchase-banner {
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/21.jpg);
     @extend .bg-center;
+    @include d-flex (column,center,center,nowrap,0);
 
 }
